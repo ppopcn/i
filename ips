@@ -1,0 +1,3 @@
+echo -e "IPADDR_START=$3\nIPADDR_END=$4\nCLONENUM_START=$2" >/etc/sysconfig/network-scripts/ifcfg-$1-range$2
+echo 'ARPCHECK="no"' >>/etc/sysconfig/network-scripts/ifcfg-$1
+echo 'NM_CONTROLLED="no"' >>/etc/sysconfig/network-scripts/ifcfg-$1
